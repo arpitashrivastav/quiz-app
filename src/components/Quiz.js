@@ -12,6 +12,7 @@ function Quiz({ score, setScore, timer, goToResult, clearTimer }) {
     updateScore();
     if (currentQuestion < QUESTIONS.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
+      setClickedOption("")
     } else {
       goToResult("results");
       clearTimer();
